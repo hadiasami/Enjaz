@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>admin</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/datatables.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg  bg-color fixed-top">
+            <div class="container-fluid">
+                <!-- sidenav trigger -->
+                  <button class=" navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <!-- end sidenav trigger  -->
+              <a class="navbar-brand fw-bold ms-auto" href="#">ملف إنجاز المعلم</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item m-x1">
+                        <a href="#" class="btn btn-portal">
+                            <img src="./img/Logorawafed1.png" alt="">
+                            <span>بوابة روافد التعليمية</span>
+                        </a>
+    
+                     </li>
+                     <li class="nav-item mx-1" >
+                        <a href="#" class="btn btn-channel">
+                            <img src="./img/logo12.png" alt="">
+                            <span>قناة روافد التعليمية</span>
+                        </a>
+    
+                     </li>
+                     <li class="nav-item mx-1" >
+                        <a href="#" class="btn btn-eduplus">
+                            <img src="./img/logo-he.png" alt="">
+                            <span>حاضنة الإبداع التعليمي  </span>
+                        </a>
+    
+                     </li>
+                     <li class="nav-item dropdown user-name">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          محمد عبد القادر
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                          
+                        </ul>
+                      </li>
+                 
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- end navbar -->
+        <!-- off canvas -->
+          
+          <div class="offcanvas offcanvas-end sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-body px-0">
+              
+              <ul class="nav customsidebar-ul flex-column mb-sm-auto mb-0 align-items-center align-items-md-start pe-0 w-100 mt-2 mt-md-2" id="menu">
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle px-2 py-1 my-1 sidetext-color  " id="home">
+                        <i class="fs-4 bi-house ms-2"></i> <span class="ms-1 d-none d-md-inline">الصفحة الرئيسية</span>
+                    </a>
+                </li>
+                <div class="me-4"> 
+                  <li class=" nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color active" id="personal">
+                        <i class="bi bi-person ms-2"></i> <span class="ms-1 d-none d-md-inline">البيانات الشخصية </span>
+                    </a>
+                </li>
+                <li class="nav-item side-text-hover">
+                    <a href="educational_data.html" class="nav-link align-middle px-2 py-1 my-1 sidetext-color ">
+                        <i class="bi bi-book-half ms-2"></i> <span class="ms-1 d-none d-md-inline">المؤهلات العلمية  </span>
+                    </a>
+                </li>
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                    <i class="bi bi-collection ms-2"></i> <span class="ms-1 d-none d-md-inline">الخبرات</span>
+                    </a>
+                </li>
+               <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color " id="personal">
+                    <i class="bi bi-journal-bookmark-fill ms-2"></i> <span class="ms-1 d-none d-md-inline">الدورات</span>
+                    </a>
+                </li>
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                      <i class="bi bi-star-half ms-2 fa-xs"></i> <span class="ms-1 d-none d-md-inline">المهارات</span>
+                    </a>
+                </li>
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                      <i class="bi bi-box-seam ms-2"></i> <span class="ms-1 d-none d-md-inline">اللغات</span>
+                    </a>
+                </li>
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                    <i class="bi bi-wallet2 ms-2"></i> <span class="ms-1 d-none d-md-inline">العضويات</span>
+                    </a>
+                </li>
+                 <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                      <i class="bi bi-link-45deg ms-2"></i> <span class="ms-1 d-none d-md-inline">مواقع التواصل الاجتماعي</span>
+                    </a>
+                </li>
+                </div>
+                <li class="dropdown-divider"></li>
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                      <i class="bi bi-bezier ms-2"></i> <span class="ms-1 d-none d-md-inline">المبادرات</span>
+                    </a>
+                </li>
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                    <i class="bi bi-emoji-sunglasses ms-2"></i> <span class="ms-1 d-none d-md-inline">الإنجازات</span>
+                    </a>
+                </li>
+                <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                    <i class="bi bi-award ms-2"></i> <span class="ms-1 d-none d-md-inline">الجوائز و المسابقات</span>
+                    </a>
+                </li>
+                 <li class="nav-item side-text-hover">
+                    <a href="#" class="nav-link align-middle  px-2 py-1 my-1 sidetext-color ">
+                    <i class="bi bi-chat-right-dots ms-2"></i> <span class="ms-1 d-none d-md-inline"> الرسائل الواردة </span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div class="footer-offcanvas bottom-0 d-flex align-items-center justify-content-center">
+              <img src="./img/ministrylogo.png" alt="">
+              <span>وزارة التربية و التعليم العالي</span>
+            </div>
+          </div>
+        <!-- end off canvas -->
+        <!-- personal data content -->
+        <div class="content">
+          <div class="container-fluid  p-5 pt-0 mt-5">
+            <div class="row px-md-5 mx-auto w-75  " style="height: 100% !important;">
+              <div class="col-12 images d-flex justify-content-center mt-3 position-relative " style="background-image: url('./img/cover.jpg'); background-repeat: no-repeat;
+              background-size: 100% 100%; padding-top:80px; ">
+              <div class="about  position-absolute position-relative top-70 end-1 d-flex align-items-center">
+                <img src="./img/profile.jpg" class="profile-img image-fluidtranslate-middle "  alt="">
+                
+                  <div class="me-3 mt-5">
+                    <div class="name"> محمد عبد القادر علي</div>
+                    <div  class="id-no">
+                      38585737373763
+                     </div>
+                   <div>
+                    <span class="job-position">معلم</span>
+                    <span>|</span>
+                    <span class="activity-no">20 نشاط</span>
+                   </div>
+                  </div>
+                  
+             
+              </div>
+              <div class="image-upload position-absolute top-70 end-1 d-flex justify-content-center">
+                <label for="file-input">
+                  <i class="bi bi-camera"></i>
+                </label>
+                <input id="file-input" type="file" />
+              </div>
+              <div class="image-upload position-absolute bottom-0 start-0 d-flex justify-content-center">
+                <label for="file-input">
+                  <i class="bi bi-camera"></i>
+                </label>
+                <input id="file-input" type="file" />
+              </div>
+              </div>
+            </div>
+            <div class="row data px-md-5 mx-auto w-75" style="    margin-top: 10rem !important;
+            ">
+              <div class="col-12 col-md-6">المدرسة : <span>خالد الحسن الثانوية</span></div>
+              <div class="col-12 col-md-6">المديرية: <span>مديرية غرب خان يونس</span></div>
+            </div>
+            <div class="row data px-md-5 mx-auto w-75" >
+              <div class="col-12 col-md-6">المراحل التعليمية : <span>الثانوية  </span></div>
+              <div class="col-12 col-md-6">الصفوف الدراسية: <span> الحادي عشر- علمي  </span></div>
+            </div>
+            <div class="row data px-md-5 mx-auto w-75">
+              <div class="col-12 col-md-6">  المواد التعليمية: <span>اللغة العربية  </span></div>
+            </div>
+            <div class="row ">
+              <div class="col-6"></div>
+              <div class="col-6"><div class="btn edit-button d-flex justify-content-center">
+                
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="bi bi-pencil-square ms-2 "></i>تعديل</a>
+               </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+       <!-- edit modal -->
+       <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title" id="exampleModalLabel">تعديل البيانات الشخصية </h5>
+        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-3 m-5 " >
+          <div class="form-floating mb-3 ms-3">
+            <input type="text" class="form-control" id="floatingInput" value="محمد على أحمد">
+            <label for="floatingInput" > الاسم </label>
+          </div>
+          <div class="form-floating mb-3 ms-3">
+            <input type="text" class="form-control" id="floatingInput" value="293948  ">
+            <label for="floatingInput" > رقم الهوية </label>
+          </div>
+          <div class="form-floating mb-3 ms-3">
+            <input type="text" class="form-control" id="floatingInput" value="غرب خانيونس    ">
+            <label for="floatingInput" > المديرية  </label>
+          </div>
+          <div class="form-floating mb-3 ms-3">
+            <input type="text" class="form-control" id="floatingInput" value="خالد الحسن الثانوية  ">
+            <label for="floatingInput" > المدرسة  </label>
+          </div>
+          <div class="form-floating mb-3 ms-3">
+            <input type="text" class="form-control" id="floatingInput" value="الثانوي    ">
+            <label for="floatingInput" > المراحل  </label>
+          </div>
+          <div class="form-floating mb-3 ms-3">
+            <input type="text" class="form-control" id="floatingInput" value="حادي عشر علمي    ">
+            <label for="floatingInput" > الصفوف  </label>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-save"> حفظ</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+       <!-- end edit modal -->
+        <!-- end personal data content -->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery-3.6.1.min.js"></script>
+        <script src="./js/jquery.dataTables.min.js"></script>
+        <script src="./js/datatables.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
+

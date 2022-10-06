@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'rawafed_font_bold';
+    src: url("../fonts/Almarai-Bold.ttf"); }
+  
+  @font-face {
+    font-family: 'rawafed_font_light';
+    src: url("../fonts/Almarai-Light.ttf"); }
+  
+  body {
+    font-family: 'rawafed_font_bold' !important;
+    direction: rtl; }
+  :root{
+      --offcanvas-width: 18%;
+      --top-navbar-height: 20px;
+  }
+  .bg-color{
+      background-color: #0b6f6b;
+      box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      z-index: 20000;
+  }
+  .navbar-brand{color:#fff !important;}
+  .navbar-toggler{
+      color: #fff !important;
+  }
+  .btn-portal{
+      border: 1px solid #FFB200;
+      border-radius: 24px;
+      transition: all ease-in-out .3s;
+  }
+  .btn-portal span{
+      color: #FFB200 !important;
+  }
+  .btn-portal:hover{background-color: #FFB200;}
+  .btn-portal span{color: #fff !important;}
+  .btn-channel{
+      border: 1px solid #E8505B;
+      border-radius: 24px;
+      transition: all ease-in-out .3s;
+  }
+  .btn-channel span{
+      color: #E8505B !important;
+  }
+  .btn-channel:hover{background-color: #E8505B;}
+  .btn-channel span{color: #fff !important;}
+  .btn-eduplus{
+      border: 1px solid #fff;
+      border-radius: 24px;
+      transition: all ease-in-out .3s;
+  }
+  .btn-eduplus span{
+      color: #0B6F6B !important;
+  }
+  .btn-eduplus:hover{background-color: #0B6F6B;}
+  .btn-eduplus span{color: #fff !important;}
+  .user-name a{
+      color: #fff !important;
+  }
+  .user-name li a{
+      color: rgb(88, 87, 87) !important;
+  }
+  .sidebar-nav{
+      width: var(--offcanvas-width);
+      background-color: #0B6F6B !important;
+      color: #fff !important;
+  }
+      
+  @media (min-width: 992px){
+      body{
+          overflow: auto !important;
+      }
+      .offcanvas-backdrop::before{display: none;}
+      .sidebar-nav{
+          transform: none;
+          visibility: visible !important;
+          top: 63px;
+          height: calc(100% - 63px);
+      }
+  
+  }
+  .customsidebar-ul li{width: 100%;}
+  .customsidebar-ul li a{
+      color: #fff !important;
+  
+  }
+  .customsidebar-ul li a:hover,.customsidebar-ul li .active{
+      color: #0B6F6B !important;
+      background-color: #fff !important;
+  }
+  
+  @media (max-width: 992px){
+      .customsidebar-ul li a i{
+          font-size: 1.75rem !important;
+      }
+      
+  }
+  @media (max-width: 1092px){
+      .customsidebar-ul li a{
+          font-size: 0.8rem !important;
+      }
+  }
+  .dropdown-divider{    border-top: 2px solid rgb(255 254 254 / 15%) !important;}
+  .footer-offcanvas img{
+      width: 40px;
+      height: 40px;
+  }
+  .footer-offcanvas span{
+      font-size: 13px;
+  }
+.edu-data{
+    margin-right: 19rem !important;
+}
+.edu-data table{
+    color: rgb(88, 87, 87);
+}
+  .edu-data table{
+    width: 70% !important;
+  }
+
+  @media (max-width: 992px){
+    .edu-data{
+        margin-right: 0rem !important;
+    }
+
+}
+.edu-data .add-btn{
+    color: #0B6F6B !important;
+    border: 2px solid #0B6F6B !important;
+    border-radius: 10px !important;
+    width: 3.5rem !important;
+    height: 3rem !important;
+}
+
+.edu-data .add-btn-row i{
+    font-size: 50px;
+    color: #0B6F6B;
+    font-weight: bold;
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+.delete-btn{
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.end-20 {
+    right: 20%!important;
+}
+.top-2m {
+    top: -2%!important;
+}
+.delete-btn i{font-size: 28px; margin: 0px auto;}
+.edit-btn{
+    color: #fff;
+    background-color: #0B6F6B;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.edit-btn:hover{
+        color: #fff;
+
+   
+}
+
+.delete-btn:hover{
+    color: #fff;
+
+}
+.modal{
+    z-index: 80000000;
+    width: 80%;
+    height: 100% !important;
+}
+.modal-dialog{
+    width: 80%;
+}
+.modal-body{padding-top: 0px !important;}
+
+.form-floating>label{
+    left: auto !important;
+    right: 0 !important;
+}
+.modal .btn-save{background-color: #0B6F6B !important;color: #fff !important;}
+.text-green{ color: #0B6F6B;}
+.h-15{height: 15% !important;}
+.h-30{height: 10% !important; }
+.w-30{width: 10% !important;}
+.circle{border-radius: 50%;}
+.px-6{padding-right: 5rem!important;padding-left: 5rem!important;}
+.end-1 {right: 1rem!important;}
+.top-70 {top: 80%!important;}
+.w-75{width: 75%;}
+.top-120{top:120%}
